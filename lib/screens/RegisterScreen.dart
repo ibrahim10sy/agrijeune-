@@ -7,6 +7,7 @@ import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import 'package:koumi/providers/CountryProvider.dart';
 import 'package:koumi/screens/LoginScreen.dart';
+import 'package:koumi/screens/PinLoginScreen.dart';
 import 'package:koumi/screens/RegisterNextScreen.dart';
 import 'package:koumi/service/BottomNavigationService.dart';
 import 'package:koumi/widgets/BottomNavigationPage.dart';
@@ -19,6 +20,8 @@ class RegisterScreen extends StatefulWidget {
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();
 }
+
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 
 class _RegisterScreenState extends State<RegisterScreen> {
   String nomActeur = "";
@@ -323,22 +326,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
         processedNumberTel = removePlus(phoneController.text);
       });
     });
-
-    // whatsAppController.addListener(() {
-    //   if (isPhoneEditing) return;
-    //   setState(() {
-    //     // processedNumber = removePlus(whatsAppController.text);
-    //     phoneController.text = whatsAppController.text;
-    //   });
-    // });
-
-    // phoneController.addListener(() {
-    //   if (isWhatsAppEditing) return;
-    //   setState(() {
-    //     processedNumberTel = phoneController.text;
-    //     // processedNumberTel = removePlus(phoneController.text);
-    //   });
-    // });
   }
 
   @override
@@ -367,7 +354,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               },
               child: const Text(
                 'Fermer',
-                style: TextStyle(color: Colors.orange, fontSize: 17),
+                style: TextStyle(color: d_colorGreen, fontSize: 17),
               ),
             )
           ]),
@@ -377,17 +364,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
             padding: const EdgeInsets.all(10.0),
             child: Column(
               children: [
+                SizedBox(
+                  height: 20,
+                ),
                 Center(
-                    child: Image.asset(
-                  'assets/images/logo.png',
-                  height: 150,
-                  width: 150,
+                    child: SizedBox(
+                  height: 190,
+                  child: Image.asset(
+                    'assets/images/logo-agrijeunes1.png',
+                    width: 250,
+                  ),
                 )),
                 Container(
                   height: 40,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 248, 138, 11),
+                    color: d_colorGreen,
                   ),
                   child: Center(
                     child: Row(
@@ -405,10 +397,20 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const LoginScreen()));
+                            // Navigator.push(
+                            //     context,
+                            //     MaterialPageRoute(
+                            //         builder: (context) => const LoginScreen()));
+                            Future.microtask(() {
+                              Provider.of<BottomNavigationService>(context,
+                                      listen: false)
+                                  .changeIndex(0);
+                            });
+                            Get.to(
+                              PinLoginScreen(),
+                              duration: Duration(seconds: 1),
+                              transition: Transition.leftToRight,
+                            );
                           },
                           child: const Text(
                             "Se connecter",
@@ -634,8 +636,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 ),
                               ),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(
-                                    0xFFFF8A00), // Orange color code
+                                backgroundColor:
+                                    d_colorGreen, // Orange color code
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15),
                                 ),

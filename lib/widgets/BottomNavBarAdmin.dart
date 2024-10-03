@@ -9,6 +9,8 @@ import 'package:koumi/screens/Panier.dart';
 import 'package:koumi/service/BottomNavigationService.dart';
 import 'package:provider/provider.dart';
 
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
+
 class BottomNavBarAdmin extends StatefulWidget {
   const BottomNavBarAdmin({super.key});
 
@@ -20,7 +22,7 @@ class BottomNavBarAdmin extends StatefulWidget {
 
 // const d_color = Color.fromRGBO(254, 243, 231, 1);
 // const d_colorPage = Color.fromRGBO(255, 255, 255, 1);
-// const d_colorOr = Color.fromRGBO(254, 243, 231, 1);
+// const d_colorGreen = Color.fromRGBO(254, 243, 231, 1);
 
 class _BottomNavBarAdminState extends State<BottomNavBarAdmin> {
   int activePageIndex = 0;
@@ -121,7 +123,7 @@ class _BottomNavBarAdminState extends State<BottomNavBarAdmin> {
             ),
           ],
           unselectedItemColor: Colors.black,
-          selectedItemColor: Color(0xFFFF8A00),
+          selectedItemColor: d_colorGreen,
           iconSize: 30,
           showUnselectedLabels: true,
           selectedLabelStyle: const TextStyle(color: Colors.black),
@@ -153,6 +155,4 @@ class _BottomNavBarAdminState extends State<BottomNavBarAdmin> {
       ),
     );
   }
-
- 
 }

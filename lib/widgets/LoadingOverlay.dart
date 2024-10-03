@@ -5,10 +5,10 @@ class LoadingOverlay extends StatelessWidget {
   final Widget child;
   final String? message;
 
-   LoadingOverlay({
+  LoadingOverlay({
     required this.isLoading,
     required this.child,
-     this.message,
+    this.message,
   });
 
   @override
@@ -18,12 +18,13 @@ class LoadingOverlay extends StatelessWidget {
         child,
         isLoading
             ? Container(
-                color: Colors.black.withOpacity(0.5), // Opacité pour l'arrière-plan
+                color: Colors.black
+                    .withOpacity(0.5), // Opacité pour l'arrière-plan
                 child: Center(
                   child: CircularProgressIndicator(
-                      backgroundColor: (Color.fromARGB(255, 245, 212, 169)),
-          color: (Colors.orange),
-                  ), 
+                    backgroundColor: (Color.fromARGB(255, 245, 212, 169)),
+                    color: (Colors.orange),
+                  ),
                   // Indicateur de chargement
                 ),
               )
@@ -81,7 +82,7 @@ class LoadingOverlay extends StatelessWidget {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage(
-                                'assets/images/logo.png', // Remplacez 'assets/loading_image.png' par le chemin de votre image
+                                'assets/images/fav.png', // Remplacez 'assets/loading_image.png' par le chemin de votre image
                               ),
                             ),
                           ),

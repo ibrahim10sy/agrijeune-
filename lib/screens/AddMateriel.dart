@@ -30,7 +30,7 @@ class AddMateriel extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _AddMaterielState extends State<AddMateriel> {
   TextEditingController _nomController = TextEditingController();
@@ -213,7 +213,7 @@ class _AddMaterielState extends State<AddMateriel> {
         child: Scaffold(
           backgroundColor: const Color.fromARGB(255, 250, 250, 250),
           appBar: AppBar(
-            backgroundColor: d_colorOr,
+            backgroundColor: d_colorGreen,
             centerTitle: true,
             toolbarHeight: 75,
             leading: IconButton(
@@ -776,7 +776,7 @@ class _AddMaterielState extends State<AddMateriel> {
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    d_colorOr, // Orange color code
+                                    d_colorGreen, // Orange color code
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15),
                                 ),
@@ -980,7 +980,7 @@ class _AddMaterielState extends State<AddMateriel> {
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    d_colorOr, // Orange color code
+                                    d_colorGreen, // Orange color code
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15),
                                 ),
@@ -1096,7 +1096,7 @@ class _AddMaterielState extends State<AddMateriel> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1123,7 +1123,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1133,7 +1133,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1247,7 +1247,7 @@ class _AddMaterielState extends State<AddMateriel> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1274,7 +1274,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1284,7 +1284,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1397,7 +1397,7 @@ class _AddMaterielState extends State<AddMateriel> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1424,7 +1424,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1434,7 +1434,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1544,7 +1544,7 @@ class _AddMaterielState extends State<AddMateriel> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1570,7 +1570,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1580,7 +1580,7 @@ class _AddMaterielState extends State<AddMateriel> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();

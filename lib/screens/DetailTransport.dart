@@ -38,7 +38,7 @@ class DetailTransport extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _DetailTransportState extends State<DetailTransport> {
   late Vehicule vehicules;
@@ -527,7 +527,7 @@ class _DetailTransportState extends State<DetailTransport> {
       child: Scaffold(
           backgroundColor: const Color.fromARGB(255, 250, 250, 250),
           appBar: AppBar(
-              backgroundColor: d_colorOr,
+              backgroundColor: d_colorGreen,
               centerTitle: true,
               toolbarHeight: 75,
               leading: _isEditing
@@ -819,7 +819,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 children: [
                   Text(
                     "Ajouter d'autres prix",
-                    style: TextStyle(color: d_colorOr, fontSize: 17),
+                    style: TextStyle(color: d_colorGreen, fontSize: 17),
                   ),
                   IconButton(
                     onPressed: () {
@@ -907,7 +907,7 @@ class _DetailTransportState extends State<DetailTransport> {
             height: 40,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
-              color: d_colorOr,
+              color: d_colorGreen,
             ),
             child: Center(
               child: Text(
@@ -942,7 +942,7 @@ class _DetailTransportState extends State<DetailTransport> {
             height: 40,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
-              color: d_colorOr,
+              color: d_colorGreen,
             ),
             child: Center(
               child: Text(
@@ -959,7 +959,7 @@ class _DetailTransportState extends State<DetailTransport> {
         Padding(
           padding: EdgeInsets.all(8),
           child: ReadMoreText(
-            colorClickableText: d_colorOr,
+            colorClickableText: d_colorGreen,
             trimLines: 2,
             trimMode: TrimMode.Line,
             trimCollapsedText: "Lire plus",
@@ -977,7 +977,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 height: 40,
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
-                  color: d_colorOr,
+                  color: d_colorGreen,
                 ),
                 child: Center(
                   child: Text(
@@ -1344,7 +1344,7 @@ class _DetailTransportState extends State<DetailTransport> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1371,7 +1371,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1381,7 +1381,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1492,7 +1492,7 @@ class _DetailTransportState extends State<DetailTransport> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1518,7 +1518,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1528,7 +1528,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1638,7 +1638,7 @@ class _DetailTransportState extends State<DetailTransport> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1679,7 +1679,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     // selectedDestinations.remove(niveau3);
@@ -1690,7 +1690,7 @@ class _DetailTransportState extends State<DetailTransport> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();

@@ -7,7 +7,6 @@ import 'package:koumi/service/FormeService.dart';
 import 'package:provider/provider.dart';
 
 class UpdateForme extends StatefulWidget {
-
   final Forme forme;
   const UpdateForme({super.key, required this.forme});
 
@@ -16,10 +15,8 @@ class UpdateForme extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _UpdateFormeState extends State<UpdateForme> {
-  
   TextEditingController libelleController = TextEditingController();
   TextEditingController descriptionController = TextEditingController();
   final formkey = GlobalKey<FormState>();
@@ -32,7 +29,7 @@ class _UpdateFormeState extends State<UpdateForme> {
     descriptionController.text = formes.descriptionForme!;
     super.initState();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(

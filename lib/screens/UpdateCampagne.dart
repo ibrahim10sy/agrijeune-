@@ -19,14 +19,12 @@ class UpdateCampagne extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _UpdateCampagneState extends State<UpdateCampagne> {
   TextEditingController nomController = TextEditingController();
   TextEditingController descriptionController = TextEditingController();
   late Campagne campagne;
-    final formkey = GlobalKey<FormState>();
-
+  final formkey = GlobalKey<FormState>();
 
   @override
   void initState() {
@@ -135,9 +133,9 @@ class _UpdateCampagneState extends State<UpdateCampagne> {
                           await CampagneService()
                               .updateCampagne(
                                 idCampagne: campagne.idCampagne!,
-                                  nomCampagne: nom,
-                                  description: desc,
-                                  )
+                                nomCampagne: nom,
+                                description: desc,
+                              )
                               .then((value) => {
                                     Provider.of<CampagneService>(context,
                                             listen: false)

@@ -31,7 +31,7 @@ class Profil extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 const d_colorPage = Color.fromRGBO(255, 255, 255, 1);
 
 class _ProfilState extends State<Profil> {
@@ -79,7 +79,7 @@ class _ProfilState extends State<Profil> {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           title: const Text(
@@ -676,13 +676,13 @@ class _ProfilState extends State<Profil> {
                             ),
                             icon: const Icon(
                               Icons.logout_rounded,
-                              color: d_colorOr,
+                              color: d_colorGreen,
                             ),
                             label: Text(
                               "Déconnexion",
                               style: TextStyle(
                                 fontSize: 20,
-                                color: d_colorOr,
+                                color: d_colorGreen,
                                 fontWeight: FontWeight.w700,
                               ),
                             )),

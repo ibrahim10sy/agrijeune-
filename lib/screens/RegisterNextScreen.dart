@@ -41,7 +41,7 @@ class RegisterNextScreen extends StatefulWidget {
   State<RegisterNextScreen> createState() => _RegisterNextScreenState();
 }
 
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _RegisterNextScreenState extends State<RegisterNextScreen> {
   PhoneCountryData? _initialCountryData;
@@ -308,7 +308,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -334,7 +334,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -344,7 +344,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -457,7 +457,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -484,7 +484,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -494,7 +494,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     List<String> typeLibelle =

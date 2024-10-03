@@ -42,7 +42,7 @@ class NextAddVehicule extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _NextAddVehiculeState extends State<NextAddVehicule> {
   TextEditingController _etatController = TextEditingController();
@@ -218,7 +218,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
       child: Scaffold(
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(
@@ -331,12 +331,12 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                                   },
                                   icon: Icon(
                                     Icons.add,
-                                    color: d_colorOr,
+                                    color: d_colorGreen,
                                   ),
                                   label: Text(
                                     'Ajouter les  prix',
                                     style: TextStyle(
-                                        color: d_colorOr, fontSize: 17,  decoration: TextDecoration.underline ),
+                                        color: d_colorGreen, fontSize: 17,  decoration: TextDecoration.underline ),
                                   ),
                                 ),
                               ],
@@ -593,7 +593,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                             }
                           },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: d_colorOr, // Orange color code
+                            backgroundColor: d_colorGreen, // Orange color code
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),
@@ -709,7 +709,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -736,7 +736,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -746,7 +746,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -857,7 +857,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -898,7 +898,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     // selectedDestinations.remove(niveau3);
@@ -909,7 +909,7 @@ class _NextAddVehiculeState extends State<NextAddVehicule> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();

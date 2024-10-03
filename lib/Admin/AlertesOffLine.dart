@@ -19,7 +19,7 @@ class AlertesOffLineScreen extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _AlertesOffLineScreenState extends State<AlertesOffLineScreen> {
   late Acteur acteur = Acteur();
@@ -68,7 +68,7 @@ class _AlertesOffLineScreenState extends State<AlertesOffLineScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 250, 250, 250),
       appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(

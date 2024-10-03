@@ -22,7 +22,6 @@ class ParametreGenerauxPage extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _ParametreGenerauxPageState extends State<ParametreGenerauxPage> {
   List<ParametreGeneraux> paramList = [];
@@ -140,7 +139,7 @@ class _ParametreGenerauxPageState extends State<ParametreGenerauxPage> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 250, 250, 250),
       appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: isEditing
@@ -345,7 +344,7 @@ class _ParametreGenerauxPageState extends State<ParametreGenerauxPage> {
                                                       "https://koumi.ml/api-koumi/parametreGeneraux/${param.idParametreGeneraux!}/image",
                                                     ),
                                                     placeholder: AssetImage(
-                                                        "assets/images/logo.png"),
+                                                        "assets/images/fav.png"),
                                                     placeholderFit:
                                                         BoxFit.cover,
                                                     width: 90,
@@ -378,26 +377,24 @@ class _ParametreGenerauxPageState extends State<ParametreGenerauxPage> {
                                             ),
                                           )
                                         : FadeInImage(
-                                                    image: NetworkImage(
-                                                      "https://koumi.ml/api-koumi/parametreGeneraux/${param.idParametreGeneraux!}/image",
-                                                    ),
-                                                    placeholder: AssetImage(
-                                                        "assets/images/logo.png"),
-                                                    placeholderFit:
-                                                        BoxFit.cover,
-                                                    width: 90,
-                                                    height: 90,
-                                                    fit: BoxFit.cover,
-                                                    imageErrorBuilder: (context,
-                                                        error, stackTrace) {
-                                                      // Widget affiché en cas d'erreur
-                                                      return Image.asset(
-                                                        'assets/images/default_image.png',
-                                                        fit: BoxFit.contain,
-                                                      );
-                                                    },
-                                                  ),
-                                                
+                                            image: NetworkImage(
+                                              "https://koumi.ml/api-koumi/parametreGeneraux/${param.idParametreGeneraux!}/image",
+                                            ),
+                                            placeholder: AssetImage(
+                                                "assets/images/fav.png"),
+                                            placeholderFit: BoxFit.cover,
+                                            width: 90,
+                                            height: 90,
+                                            fit: BoxFit.cover,
+                                            imageErrorBuilder:
+                                                (context, error, stackTrace) {
+                                              // Widget affiché en cas d'erreur
+                                              return Image.asset(
+                                                'assets/images/default_image.png',
+                                                fit: BoxFit.contain,
+                                              );
+                                            },
+                                          ),
                                     title: isEditing
                                         ? TextFormField(
                                             initialValue: param.nomSysteme,

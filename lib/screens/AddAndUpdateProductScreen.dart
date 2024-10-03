@@ -35,7 +35,7 @@ class AddAndUpdateProductScreen extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
   final formkey = GlobalKey<FormState>();
@@ -208,11 +208,11 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+   
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(
@@ -628,7 +628,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                         // }
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: d_colorOr, // Orange color code
+                        backgroundColor: d_colorGreen, // Orange color code
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15),
                         ),
@@ -772,7 +772,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -799,7 +799,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _uniteController.clear();
@@ -809,7 +809,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _uniteController.clear();
@@ -919,7 +919,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -946,7 +946,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -956,7 +956,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1069,7 +1069,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1095,7 +1095,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _formController.clear();
@@ -1105,7 +1105,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _formController.clear();
@@ -1216,7 +1216,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1242,7 +1242,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1252,7 +1252,7 @@ class _AddAndUpdateProductScreenState extends State<AddAndUpdateProductScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();

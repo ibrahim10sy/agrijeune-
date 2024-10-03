@@ -23,7 +23,7 @@ class AddAlerte extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _AddAlerteState extends State<AddAlerte> {
   TextEditingController _titreController = TextEditingController();
@@ -557,7 +557,7 @@ class _AddAlerteState extends State<AddAlerte> {
         child: Scaffold(
             backgroundColor: const Color.fromARGB(255, 250, 250, 250),
             appBar: AppBar(
-                backgroundColor: d_colorOr,
+                backgroundColor: d_colorGreen,
                 centerTitle: true,
                 toolbarHeight: 75,
                 leading: IconButton(
@@ -786,7 +786,7 @@ class _AddAlerteState extends State<AddAlerte> {
                           _hasUploadStarted
                               ? LinearProgressIndicator(
                                   color: d_colorGreen,
-                                  backgroundColor: d_colorOr,
+                                  backgroundColor: d_colorGreen,
                                   value: _progressValue,
                                 )
                               : Container(),
@@ -948,7 +948,7 @@ class _AddAlerteState extends State<AddAlerte> {
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    d_colorOr, // Orange color code
+                                    d_colorGreen, // Orange color code
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15),
                                 ),

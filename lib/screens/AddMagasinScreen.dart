@@ -45,8 +45,8 @@ class AddMagasinScreen extends StatefulWidget {
   State<AddMagasinScreen> createState() => _AddMagasinScreenState();
 }
 
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 class _AddMagasinScreenState extends State<AddMagasinScreen> {
   late Acteur acteur = Acteur();
   String nomMagasin = "";
@@ -502,7 +502,7 @@ class _AddMagasinScreenState extends State<AddMagasinScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -529,7 +529,7 @@ class _AddMagasinScreenState extends State<AddMagasinScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController!.clear();
@@ -539,7 +539,7 @@ class _AddMagasinScreenState extends State<AddMagasinScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController!.clear();
@@ -565,7 +565,7 @@ class _AddMagasinScreenState extends State<AddMagasinScreen> {
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: !(widget.isRoute ?? false)
             ? AppBar(
-                backgroundColor: d_colorOr,
+                backgroundColor: d_colorGreen,
                 centerTitle: true,
                 toolbarHeight: 75,
                 leading: IconButton(

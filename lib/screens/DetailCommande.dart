@@ -15,6 +15,8 @@ class DetailCommandeScreen extends StatefulWidget {
   State<DetailCommandeScreen> createState() => _DetailCommandeScreenState();
 }
 
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
+
 class _DetailCommandeScreenState extends State<DetailCommandeScreen> {
   late Future<List<DetailCommande>> futureDetails;
   List<DetailCommande> details = [];
@@ -36,13 +38,13 @@ class _DetailCommandeScreenState extends State<DetailCommandeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+    
     return LoadingOverlay(
       isLoading: isLoading,
       child: Scaffold(
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-            backgroundColor: d_colorOr,
+            backgroundColor: d_colorGreen,
             centerTitle: true,
             toolbarHeight: 75,
           title: Text("Detail Commande",style: TextStyle(color: Colors.white,fontSize: 18,overflow: TextOverflow.ellipsis),),

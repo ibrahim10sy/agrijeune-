@@ -508,7 +508,7 @@ class BottomNavigationPage extends StatefulWidget {
 
 const d_color = Color.fromRGBO(254, 243, 231, 1);
 const d_colorPage = Color.fromRGBO(255, 255, 255, 1);
-const d_colorOr = Color.fromRGBO(254, 243, 231, 1);
+const d_colorGreen = Color.fromRGBO(254, 243, 231, 1);
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   int activePageIndex = 0;

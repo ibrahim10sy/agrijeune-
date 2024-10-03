@@ -27,7 +27,7 @@ class PinLoginScreen extends StatefulWidget {
   State<PinLoginScreen> createState() => _PinLoginScreenState();
 }
 
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _PinLoginScreenState extends State<PinLoginScreen> {
   String enteredPin = '';
@@ -418,7 +418,7 @@ class _PinLoginScreenState extends State<PinLoginScreen> {
               //     style: TextStyle(
               //         fontSize: 16,
               //         // decoration: TextDecoration.underline,
-              //         color: d_colorOr),
+              //         color: d_colorGreen),
               //   ),
               // ),
               // PopupMenuButton<String>(

@@ -20,7 +20,7 @@ List<Map<String, String>> imageList = [
 ];
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class Carrousels extends StatelessWidget {
   Carrousels({super.key});
@@ -84,7 +84,7 @@ class Carrousels extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color:
-                          currentIndex == entry.key ? d_colorOr : d_colorGreen,
+                          currentIndex == entry.key ? d_colorGreen : d_colorGreen,
                     ),
                   ),
                 );
@@ -466,7 +466,7 @@ Future<void> getLocationNew() async {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 color: currentIndex == entry.key
-                                    ? d_colorOr
+                                    ? d_colorGreen
                                     : d_colorGreen,
                               ),
                             ),

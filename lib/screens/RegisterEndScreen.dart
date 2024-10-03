@@ -42,7 +42,7 @@ class RegisterEndScreen extends StatefulWidget {
   State<RegisterEndScreen> createState() => _RegisterEndScreenState();
 }
 
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _RegisterEndScreenState extends State<RegisterEndScreen> {
   bool isLoading = false;
@@ -278,7 +278,7 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -305,7 +305,7 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -315,7 +315,7 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     List<String> typeLibelle =

@@ -9,14 +9,13 @@ class CustomErrorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 250, 250, 250),
-    
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Center(
             //     child: Image.asset(
-            //   'assets/images/logo.png',
+            //   'assets/images/fav.png',
             //   height: 150,
             //   width: 150,
             // )),

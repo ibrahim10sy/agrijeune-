@@ -14,7 +14,6 @@ class DetailSuperficie extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _DetailSuperficieState extends State<DetailSuperficie> {
   late Superficie superficies;
@@ -30,7 +29,7 @@ class _DetailSuperficieState extends State<DetailSuperficie> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 250, 250, 250),
       appBar: AppBar(
-        backgroundColor: d_colorOr,
+        backgroundColor: d_colorGreen,
         centerTitle: true,
         toolbarHeight: 75,
         leading: IconButton(
@@ -62,7 +61,7 @@ class _DetailSuperficieState extends State<DetailSuperficie> {
             height: 40,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
-              color: d_colorOr,
+              color: d_colorGreen,
             ),
             child: Center(
               child: Text(
@@ -83,7 +82,7 @@ class _DetailSuperficieState extends State<DetailSuperficie> {
             height: 40,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
-              color: d_colorOr,
+              color: d_colorGreen,
             ),
             child: Center(
               child: Text(

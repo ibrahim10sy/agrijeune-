@@ -26,7 +26,7 @@ class MyStoresScreen extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _MyStoresScreenState extends State<MyStoresScreen> {
   late Acteur acteur;
@@ -213,7 +213,7 @@ class _MyStoresScreenState extends State<MyStoresScreen> {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(
@@ -619,7 +619,7 @@ class _MyStoresScreenState extends State<MyStoresScreen> {
                                                                             Icons
                                                                                 .disabled_visible,
                                                                             color:
-                                                                                d_colorOr),
+                                                                                d_colorGreen),
                                                                     title: Text(
                                                                       filtereSearch[index].statutMagasin ==
                                                                               false
@@ -630,7 +630,7 @@ class _MyStoresScreenState extends State<MyStoresScreen> {
                                                                         color: filtereSearch[index].statutMagasin ==
                                                                                 false
                                                                             ? Colors.green
-                                                                            : d_colorOr,
+                                                                            : d_colorGreen,
                                                                         fontWeight:
                                                                             FontWeight.bold,
                                                                       ),
@@ -803,7 +803,7 @@ class _MyStoresScreenState extends State<MyStoresScreen> {
                                                           child: const Center(
                                                         child:
                                                             CircularProgressIndicator(
-                                                          color: d_colorOr,
+                                                          color: d_colorGreen,
                                                         ),
                                                       )),
                                                     )

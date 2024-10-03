@@ -25,7 +25,8 @@ class BottomNavigationPage extends StatefulWidget {
 
 const d_color = Color.fromRGBO(254, 243, 231, 1);
 const d_colorPage = Color.fromRGBO(255, 255, 255, 1);
-const d_colorOr = Color.fromRGBO(254, 243, 231, 1);
+// const d_colorGreen = Color.fromRGBO(254, 243, 231, 1);
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
   int activePageIndex = 0;
@@ -84,7 +85,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
           // Panier(),
           const Profil(),
         ];
-         
+
         bottomNavigationBarItems = [
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 250, 250, 250),
@@ -127,11 +128,6 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
             icon: Icon(Icons.list_alt_sharp),
             label: "Mes Intrants",
           ),
-          // BottomNavigationBarItem(
-          //   backgroundColor: Color.fromARGB(255, 250, 250, 250),
-          //   icon: Icon(Icons.shopping_cart),
-          //   label: "Panier",
-          // ),
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 250, 250, 250),
             icon: Icon(Icons.person_pin),
@@ -158,11 +154,6 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
             icon: Icon(Icons.list_alt_sharp),
             label: "Mes matériels",
           ),
-          // BottomNavigationBarItem(
-          //   backgroundColor: Color.fromARGB(255, 250, 250, 250),
-          //   icon: Icon(Icons.shopping_cart),
-          //   label: "Panier",
-          // ),
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 250, 250, 250),
             icon: Icon(Icons.person_pin),
@@ -189,11 +180,6 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
             icon: Icon(Icons.car_crash),
             label: "Mes véhicules",
           ),
-          // BottomNavigationBarItem(
-          //   backgroundColor: Color.fromARGB(255, 250, 250, 250),
-          //   icon: Icon(Icons.shopping_cart),
-          //   label: "Panier",
-          // ),
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 250, 250, 250),
             icon: Icon(Icons.person_pin),
@@ -219,11 +205,6 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
             icon: Icon(Icons.list_alt_sharp),
             label: "Mes Produits",
           ),
-          // BottomNavigationBarItem(
-          //   backgroundColor: Color.fromARGB(255, 250, 250, 250),
-          //   icon: Icon(Icons.shopping_cart),
-          //   label: "Panier",
-          // ),
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 250, 250, 250),
             icon: Icon(Icons.person_pin),
@@ -245,11 +226,6 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
           icon: Icon(Icons.home_filled),
           label: "Accueil",
         ),
-        // BottomNavigationBarItem(
-        //   backgroundColor: Color.fromARGB(255, 250, 250, 250),
-        //   icon: Icon(Icons.shopping_cart),
-        //   label: "Panier",
-        // ),
         BottomNavigationBarItem(
           backgroundColor: Color.fromARGB(255, 250, 250, 250),
           icon: Icon(Icons.person_pin),
@@ -294,7 +270,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-   
+
     verify();
     _setupNavigationItems();
     Get.put(ConnectionVerify(), permanent: true);
@@ -331,7 +307,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
           elevation: 5.0,
           items: bottomNavigationBarItems,
           unselectedItemColor: Colors.black,
-          selectedItemColor: Color(0xFFFF8A00),
+          selectedItemColor: d_colorGreen,
           iconSize: 30,
           showUnselectedLabels: true,
           selectedLabelStyle: TextStyle(

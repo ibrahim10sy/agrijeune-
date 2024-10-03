@@ -22,7 +22,6 @@ class UpdatesNiveau2 extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _UpdatesNiveau2State extends State<UpdatesNiveau2> {
   late ParametreGeneraux para;
@@ -45,7 +44,7 @@ class _UpdatesNiveau2State extends State<UpdatesNiveau2> {
   void initState() {
     super.initState();
     acteur = Provider.of<ActeurProvider>(context, listen: false).acteur!;
-  
+
     niveau = widget.niveau2pays;
     libelleController.text = niveau.nomN2;
     descriptionController.text = niveau.descriptionN2;

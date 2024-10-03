@@ -22,7 +22,6 @@ class Accueil extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _AccueilState extends State<Accueil> {
   late Acteur acteur = Acteur();
@@ -79,9 +78,7 @@ class _AccueilState extends State<Accueil> {
   var latitude = 'Getting Latitude..'.obs;
   var longitude = 'Getting Longitude..'.obs;
   var address = 'Getting Address..'.obs;
-   StreamSubscription<Position>? streamSubscription;
-
- 
+  StreamSubscription<Position>? streamSubscription;
 
   @override
   void initState() {
@@ -97,7 +94,7 @@ class _AccueilState extends State<Accueil> {
     super.dispose();
   }
 
- getLocation() async {
+  getLocation() async {
     bool serviceEnabled;
 
     LocationPermission permission;
@@ -120,63 +117,70 @@ class _AccueilState extends State<Accueil> {
           'Location permissions are permanently denied, we cannot request permissions.');
     }
     streamSubscription = Geolocator.getPositionStream(
-    locationSettings: LocationSettings(
+      locationSettings: LocationSettings(
         accuracy: LocationAccuracy.high,
         distanceFilter: 10000,
-    ),
-).listen((Position position) {
-    latitude.value = 'accueil Latitude : ${position.latitude}';
-    longitude.value = 'accueil Longitude : ${position.longitude}';
-    getAddressFromLatLang(position);
-    streamSubscription?.cancel();  // Annule après la première mise à jour
-});
+      ),
+    ).listen((Position position) {
+      latitude.value = 'accueil Latitude : ${position.latitude}';
+      longitude.value = 'accueil Longitude : ${position.longitude}';
+      getAddressFromLatLang(position);
+      streamSubscription?.cancel(); // Annule après la première mise à jour
+    });
   }
 
- Future<void> getAddressFromLatLang(Position position) async {
-   final detectorPays = Provider.of<DetectorPays>(context, listen: false);
-    
+  Future<void> getAddressFromLatLang(Position position) async {
+    final detectorPays = Provider.of<DetectorPays>(context, listen: false);
+
     try {
-        List<Placemark> placemark = await placemarkFromCoordinates(position.latitude, position.longitude);
-        if (placemark.isNotEmpty) {
-            Placemark place = placemark[0];
+      List<Placemark> placemark =
+          await placemarkFromCoordinates(position.latitude, position.longitude);
+      if (placemark.isNotEmpty) {
+        Placemark place = placemark[0];
 
-          debugPrint("Address ISO dans acceuil: $detectedC");
-          address.value =
-              'Address dans acceuil : ${place.locality}, ${place.country}, ${place.isoCountryCode}';
+        debugPrint("Address ISO dans acceuil: $detectedC");
+        address.value =
+            'Address dans acceuil : ${place.locality}, ${place.country}, ${place.isoCountryCode}';
 
-            // Comparez avec les valeurs existantes avant de mettre à jour
-            String newDetectedCountryCode = place.isoCountryCode ?? "ML";
-            String newDetectedCountry = place.country ?? "Mali";
+        // Comparez avec les valeurs existantes avant de mettre à jour
+        String newDetectedCountryCode = place.isoCountryCode ?? "ML";
+        String newDetectedCountry = place.country ?? "Mali";
 
-            if (detectedCountryCode != newDetectedCountryCode || detectedCountry != newDetectedCountry) {
-                 if (mounted) {
+        if (detectedCountryCode != newDetectedCountryCode ||
+            detectedCountry != newDetectedCountry) {
+          if (mounted) {
             setState(() {
               detectedC = place.isoCountryCode;
               detectedCountryCode = place.isoCountryCode ?? "ML";
               detectedCountry = place.country ?? "Mali";
-              print("pays dans acceuil: ${detectedCountry} code: ${detectedCountryCode}");
+              print(
+                  "pays dans acceuil: ${detectedCountry} code: ${detectedCountryCode}");
               if (detectedCountry != null || detectedCountry!.isNotEmpty) {
                 detectorPays.setDetectedCountryAndCode(
                     detectedCountry!, detectedCountryCode!);
-                print("pays dans acceuil: $detectedCountry code: $detectedCountryCode");
+                print(
+                    "pays dans acceuil: $detectedCountry code: $detectedCountryCode");
               } else {
                 detectorPays.setDetectedCountryAndCode("Mali", "ML");
                 print("Le pays n'a pas pu être détecté dans acceuil.");
               }
             });
           }
-            }
-
-            String newAddress = 'Address dans accueil : ${place.locality}, ${place.country}, ${place.isoCountryCode}';
-            if (address.value != newAddress) {
-                address.value = newAddress;
-                debugPrint(newAddress);
-            }
-        } else {
-            debugPrint("Aucun emplacement trouvé dans accueil pour les coordonnées fournies.");
         }
+
+        String newAddress =
+            'Address dans accueil : ${place.locality}, ${place.country}, ${place.isoCountryCode}';
+        if (address.value != newAddress) {
+          address.value = newAddress;
+          debugPrint(newAddress);
+        }
+      } else {
+        debugPrint(
+            "Aucun emplacement trouvé dans accueil pour les coordonnées fournies.");
+      }
     } catch (e) {
-        debugPrint("Une erreur est survenue lors de la récupération de l'adresse : $e");
+      debugPrint(
+          "Une erreur est survenue lors de la récupération de l'adresse : $e");
     }
   }
 
@@ -191,9 +195,7 @@ class _AccueilState extends State<Accueil> {
           const SizedBox(
             height: 10,
           ),
-        
           DefautAcceuil(),
-        
           SizedBox(
             height: 20,
           )
@@ -201,5 +203,4 @@ class _AccueilState extends State<Accueil> {
       ),
     );
   }
-
 }

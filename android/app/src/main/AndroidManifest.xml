@@ -3,7 +3,7 @@
 
    
     <application
-        android:label="koumi"
+        android:label="Louma-BI"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

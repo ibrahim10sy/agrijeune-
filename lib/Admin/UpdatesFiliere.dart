@@ -6,7 +6,6 @@ import 'package:koumi/providers/ActeurProvider.dart';
 import 'package:koumi/service/FiliereService.dart';
 import 'package:provider/provider.dart';
 
-
 class UpdatesFilieres extends StatefulWidget {
   final Filiere filiere;
   const UpdatesFilieres({super.key, required this.filiere});
@@ -16,7 +15,6 @@ class UpdatesFilieres extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _UpdatesFilieresState extends State<UpdatesFilieres> {
   List<Filiere> filiereList = [];

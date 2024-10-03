@@ -36,7 +36,7 @@ class DetailMateriel extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _DetailMaterielState extends State<DetailMateriel> {
   TextEditingController _nomController = TextEditingController();
@@ -400,7 +400,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
       isLoading: _isLoading,
       child: Scaffold(
           appBar: AppBar(
-              backgroundColor: d_colorOr,
+              backgroundColor: d_colorGreen,
               centerTitle: true,
               toolbarHeight: 75,
               leading: _isEditing
@@ -583,7 +583,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
             height: 40,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
-              color: d_colorOr,
+              color: d_colorGreen,
             ),
             child: Center(
               child: Text(
@@ -627,7 +627,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
             height: 40,
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(
-              color: d_colorOr,
+              color: d_colorGreen,
             ),
             child: Center(
               child: Text(
@@ -650,7 +650,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                 height: 40,
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
-                  color: d_colorOr,
+                  color: d_colorGreen,
                 ),
                 child: Center(
                   child: Text(
@@ -995,7 +995,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1022,7 +1022,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1032,7 +1032,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _monnaieController.clear();
@@ -1143,7 +1143,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -1169,7 +1169,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -1179,7 +1179,7 @@ class _DetailMaterielState extends State<DetailMateriel> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();

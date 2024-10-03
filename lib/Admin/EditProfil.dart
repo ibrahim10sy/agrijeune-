@@ -27,7 +27,7 @@ class EditProfil extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 const d_colorPage = Color.fromRGBO(255, 255, 255, 1);
 
 class _EditProfilState extends State<EditProfil> {
@@ -398,7 +398,7 @@ class _EditProfilState extends State<EditProfil> {
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -424,7 +424,7 @@ class _EditProfilState extends State<EditProfil> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -434,7 +434,7 @@ class _EditProfilState extends State<EditProfil> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -543,7 +543,7 @@ class _EditProfilState extends State<EditProfil> {
                                     trailing: isSelected
                                         ? const Icon(
                                             Icons.check_box_outlined,
-                                            color: d_colorOr,
+                                            color: d_colorGreen,
                                           )
                                         : null,
                                     onTap: () {
@@ -567,7 +567,7 @@ class _EditProfilState extends State<EditProfil> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -577,7 +577,7 @@ class _EditProfilState extends State<EditProfil> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     List<String> typeLibelle =
@@ -691,7 +691,7 @@ class _EditProfilState extends State<EditProfil> {
                                     trailing: isSelected
                                         ? const Icon(
                                             Icons.check_box_outlined,
-                                            color: d_colorOr,
+                                            color: d_colorGreen,
                                           )
                                         : null,
                                     onTap: () {
@@ -715,7 +715,7 @@ class _EditProfilState extends State<EditProfil> {
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -725,7 +725,7 @@ class _EditProfilState extends State<EditProfil> {
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     List<String> typeLibelle =
@@ -751,7 +751,7 @@ class _EditProfilState extends State<EditProfil> {
       child: Scaffold(
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(
@@ -889,17 +889,17 @@ class _EditProfilState extends State<EditProfil> {
                       "Photo de profil",
                       style: TextStyle(
                         fontSize: 16,
-                        color: d_colorOr,
+                        color: d_colorGreen,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     style: TextButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      // backgroundColor: d_colorOr, // Couleur au survol
+                      // backgroundColor: d_colorGreen, // Couleur au survol
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        side: BorderSide(color: d_colorOr), // Bordure colorée
+                        side: BorderSide(color: d_colorGreen), // Bordure colorée
                       ),
                     ),
                   ),
@@ -912,17 +912,17 @@ class _EditProfilState extends State<EditProfil> {
                       "Photo du siège",
                       style: TextStyle(
                         fontSize: 16,
-                        color: d_colorOr,
+                        color: d_colorGreen,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     style: TextButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      // backgroundColor: d_colorOr, // Couleur au survol
+                      // backgroundColor: d_colorGreen, // Couleur au survol
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        side: BorderSide(color: d_colorOr), // Bordure colorée
+                        side: BorderSide(color: d_colorGreen), // Bordure colorée
                       ),
                     ),
                   ),

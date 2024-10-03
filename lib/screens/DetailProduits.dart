@@ -164,7 +164,7 @@ class _DetailProduitsState extends State<DetailProduits>
     const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: d_colorOr,
+            backgroundColor: d_colorGreen,
             centerTitle: true,
             toolbarHeight: 75,
             leading: IconButton(
@@ -238,7 +238,7 @@ class _DetailProduitsState extends State<DetailProduits>
                       height: 40,
                       width: MediaQuery.of(context).size.width,
                       decoration: const BoxDecoration(
-                        color: d_colorOr,
+                        color: d_colorGreen,
                       ),
                       child: Center(
                         child: Text(
@@ -373,7 +373,7 @@ class _DetailProduitsState extends State<DetailProduits>
                       height: 40,
                       width: MediaQuery.of(context).size.width,
                       decoration: const BoxDecoration(
-                        color: d_colorOr,
+                        color: d_colorGreen,
                       ),
                       child: Center(
                         child: Text(
@@ -405,7 +405,7 @@ class _DetailProduitsState extends State<DetailProduits>
                       height: 40,
                       width: MediaQuery.of(context).size.width,
                       decoration: const BoxDecoration(
-                        color: d_colorOr,
+                        color: d_colorGreen,
                       ),
                       child: Center(
                         child: Text(

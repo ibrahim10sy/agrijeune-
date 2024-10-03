@@ -13,7 +13,6 @@ import 'package:koumi/service/MessageService.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -25,7 +24,7 @@ class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _CustomAppBarState extends State<CustomAppBar> {
   late Acteur acteur = Acteur();
@@ -71,10 +70,11 @@ class _CustomAppBarState extends State<CustomAppBar> {
             padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset(
-                  'assets/images/logo.png',
-                  height: 48,
+                  'assets/images/fav.png',
+                  height: 46,
                   scale: 1,
                 ),
                 ElevatedButton.icon(
@@ -161,7 +161,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
-                          color: d_colorOr,
+                          color: d_colorGreen,
                           fontSize: 17,
                           fontWeight: FontWeight.w400),
                     ),

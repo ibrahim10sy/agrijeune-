@@ -83,7 +83,6 @@ void main() async {
     ChangeNotifierProvider(create: (context) => BottomNavigationService())
   ], child: MyApp()));
 }
-
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 

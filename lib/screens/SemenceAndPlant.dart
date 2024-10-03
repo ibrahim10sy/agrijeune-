@@ -32,7 +32,6 @@ class SemenceAndPlant extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _SemenceAndPlantState extends State<SemenceAndPlant> {
   int page = 0;
@@ -415,27 +414,12 @@ class _SemenceAndPlantState extends State<SemenceAndPlant> {
     super.dispose();
   }
 
-  void _selectMode(String mode) {
-    setState(() {
-      if (mode == 'Rechercher') {
-        isSearchMode = true;
-        isFilterMode = false;
-      } else if (mode == 'Filtrer') {
-        isSearchMode = false;
-        isFilterMode = true;
-      } else if (mode == 'Fermer') {
-        isSearchMode = false;
-        isFilterMode = false;
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-            backgroundColor: d_colorOr,
+            backgroundColor: d_colorGreen,
             centerTitle: true,
             toolbarHeight: 75,
             leading: IconButton(

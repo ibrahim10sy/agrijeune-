@@ -31,7 +31,7 @@
 // }
 
 // const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-// const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+// 
 
 // class _MagasinScreenState extends State<MagasinScreen>     with TickerProviderStateMixin{
 //   late ParametreGeneraux para;

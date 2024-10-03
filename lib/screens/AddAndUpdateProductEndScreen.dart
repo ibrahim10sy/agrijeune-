@@ -53,8 +53,8 @@ class AddAndUpdateProductEndSreen extends StatefulWidget {
       _AddAndUpdateProductEndSreenState();
 }
 
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 class _AddAndUpdateProductEndSreenState
     extends State<AddAndUpdateProductEndSreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -351,7 +351,7 @@ class _AddAndUpdateProductEndSreenState
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 10),
                             backgroundColor:
-                                d_colorOr, // Style de fond personnalisé
+                                d_colorGreen, // Style de fond personnalisé
                             shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.circular(8), // Bords arrondis
@@ -388,7 +388,7 @@ class _AddAndUpdateProductEndSreenState
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 20, vertical: 10),
                                 backgroundColor:
-                                    d_colorOr, // Style de fond personnalisé
+                                    d_colorGreen, // Style de fond personnalisé
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
                                       8), // Bords arrondis
@@ -428,7 +428,7 @@ class _AddAndUpdateProductEndSreenState
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -477,7 +477,7 @@ class _AddAndUpdateProductEndSreenState
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 10),
                             backgroundColor:
-                                d_colorOr, // Style de fond personnalisé
+                                d_colorGreen, // Style de fond personnalisé
                             shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.circular(8), // Bords arrondis
@@ -501,7 +501,7 @@ class _AddAndUpdateProductEndSreenState
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -511,7 +511,7 @@ class _AddAndUpdateProductEndSreenState
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -592,7 +592,7 @@ class _AddAndUpdateProductEndSreenState
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 10),
                             backgroundColor:
-                                d_colorOr, // Style de fond personnalisé
+                                d_colorGreen, // Style de fond personnalisé
                             shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.circular(8), // Bords arrondis
@@ -630,7 +630,7 @@ class _AddAndUpdateProductEndSreenState
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 20, vertical: 10),
                                 backgroundColor:
-                                    d_colorOr, // Style de fond personnalisé
+                                    d_colorGreen, // Style de fond personnalisé
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(
                                       8), // Bords arrondis
@@ -670,7 +670,7 @@ class _AddAndUpdateProductEndSreenState
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -719,7 +719,7 @@ class _AddAndUpdateProductEndSreenState
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 10),
                             backgroundColor:
-                                d_colorOr, // Style de fond personnalisé
+                                d_colorGreen, // Style de fond personnalisé
                             shape: RoundedRectangleBorder(
                               borderRadius:
                                   BorderRadius.circular(8), // Bords arrondis
@@ -743,7 +743,7 @@ class _AddAndUpdateProductEndSreenState
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -753,7 +753,7 @@ class _AddAndUpdateProductEndSreenState
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -866,7 +866,7 @@ class _AddAndUpdateProductEndSreenState
                                         trailing: isSelected
                                             ? const Icon(
                                                 Icons.check_box_outlined,
-                                                color: d_colorOr,
+                                                color: d_colorGreen,
                                               )
                                             : null,
                                         onTap: () {
@@ -893,7 +893,7 @@ class _AddAndUpdateProductEndSreenState
                 TextButton(
                   child: const Text(
                     'Annuler',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -903,7 +903,7 @@ class _AddAndUpdateProductEndSreenState
                 TextButton(
                   child: const Text(
                     'Valider',
-                    style: TextStyle(color: d_colorOr, fontSize: 16),
+                    style: TextStyle(color: d_colorGreen, fontSize: 16),
                   ),
                   onPressed: () {
                     _searchController.clear();
@@ -948,14 +948,12 @@ class _AddAndUpdateProductEndSreenState
   @override
   Widget build(BuildContext context) {
     const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-    const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
-
     return LoadingOverlay(
       isLoading: isLoading,
       child: Scaffold(
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(
@@ -1233,7 +1231,7 @@ class _AddAndUpdateProductEndSreenState
             TextButton(
               child: const Text(
                 'Fermer',
-                style: TextStyle(color: d_colorOr, fontSize: 18),
+                style: TextStyle(color: d_colorGreen, fontSize: 18),
               ),
               onPressed: () {
                 Navigator.of(context).pop();
@@ -1258,7 +1256,7 @@ class _AddAndUpdateProductEndSreenState
             TextButton(
               child: const Text(
                 'Fermer',
-                style: TextStyle(color: d_colorOr, fontSize: 18),
+                style: TextStyle(color: d_colorGreen, fontSize: 18),
               ),
               onPressed: () {
                 Navigator.of(context).pop();

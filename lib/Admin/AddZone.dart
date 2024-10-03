@@ -22,7 +22,7 @@ class AddZone extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _AddZoneState extends State<AddZone> {
   final formkey = GlobalKey<FormState>();
@@ -211,7 +211,7 @@ class _AddZoneState extends State<AddZone> {
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: !(widget.isRoute ?? false)
               ? AppBar(
-          backgroundColor: d_colorOr,
+          backgroundColor: d_colorGreen,
           centerTitle: true,
           toolbarHeight: 75,
           leading: IconButton(
@@ -392,7 +392,7 @@ class _AddZoneState extends State<AddZone> {
                           }
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: d_colorOr, // Orange color code
+                          backgroundColor: d_colorGreen, // Orange color code
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),

@@ -16,7 +16,7 @@ class PlayerWidget extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
+
 
 class _PlayerWidgetState extends State<PlayerWidget> {
   PlayerState? _playerState;
@@ -114,7 +114,7 @@ class _PlayerWidgetState extends State<PlayerWidget> {
                   GestureDetector(
                     onTap: () => _isPlaying ? _pause() : _play(),
                     child: CircleAvatar(
-                      backgroundColor: d_colorOr,
+                      backgroundColor: d_colorGreen,
                       child: Icon(
                         _isPlaying ? Icons.pause : Icons.play_arrow,
                       ),
@@ -124,7 +124,7 @@ class _PlayerWidgetState extends State<PlayerWidget> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Slider(
-                        activeColor: d_colorOr,
+                        activeColor: d_colorGreen,
                         onChanged: (value) {
                           final duration = _duration;
                           if (duration == null) return;

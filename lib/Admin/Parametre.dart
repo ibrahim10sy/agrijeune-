@@ -24,7 +24,6 @@ class Parametre extends StatefulWidget {
 }
 
 const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
-const d_colorOr = Color.fromRGBO(255, 138, 0, 1);
 
 class _ParametreState extends State<Parametre> {
   late ParametreGeneraux params = ParametreGeneraux();
@@ -140,7 +139,7 @@ class _ParametreState extends State<Parametre> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 250, 250, 250),
       appBar: AppBar(
-        backgroundColor: d_colorOr,
+        backgroundColor: d_colorGreen,
         centerTitle: true,
         toolbarHeight: 75,
         leading: IconButton(
@@ -183,7 +182,7 @@ class _ParametreState extends State<Parametre> {
                               width: 110,
                               height: 150,
                               child: Image.asset(
-                                "assets/images/logo.png",
+                                "assets/images/fav.png",
                                 scale: 1,
                                 fit: BoxFit.fill,
                               ),
@@ -208,7 +207,7 @@ class _ParametreState extends State<Parametre> {
                               ),
                             ),
                   title: Text(
-                    params.nomSysteme != null ? params.nomSysteme! : "Koumi",
+                    params.nomSysteme != null ? params.nomSysteme! : "Louma-BI",
                     style: const TextStyle(
                       fontSize: 22,
                       color: Colors.black,
@@ -219,7 +218,7 @@ class _ParametreState extends State<Parametre> {
                   subtitle: Text(
                     params.sloganSysteme != null
                         ? params.sloganSysteme!
-                        : "Koumi",
+                        : "Louma-BI",
                     textAlign: TextAlign.justify,
                     style: const TextStyle(
                       fontSize: 17,
