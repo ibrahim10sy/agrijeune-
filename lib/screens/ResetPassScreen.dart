@@ -19,7 +19,7 @@ class ResetPassScreen extends StatefulWidget {
   @override
   State<ResetPassScreen> createState() => _ResetPassScreenState();
 }
-
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 class _ResetPassScreenState extends State<ResetPassScreen> {
   String password = "";
   bool _obscureText = true;
@@ -375,7 +375,7 @@ class _ResetPassScreenState extends State<ResetPassScreen> {
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor:
-                        const Color(0xFFFF8A00), // Orange color code
+                        d_colorGreen, // Orange color code
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),

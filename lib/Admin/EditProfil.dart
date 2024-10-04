@@ -899,7 +899,8 @@ class _EditProfilState extends State<EditProfil> {
                       // backgroundColor: d_colorGreen, // Couleur au survol
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        side: BorderSide(color: d_colorGreen), // Bordure colorée
+                        side:
+                            BorderSide(color: d_colorGreen), // Bordure colorée
                       ),
                     ),
                   ),
@@ -922,7 +923,8 @@ class _EditProfilState extends State<EditProfil> {
                       // backgroundColor: d_colorGreen, // Couleur au survol
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        side: BorderSide(color: d_colorGreen), // Bordure colorée
+                        side:
+                            BorderSide(color: d_colorGreen), // Bordure colorée
                       ),
                     ),
                   ),
@@ -1230,8 +1232,7 @@ class _EditProfilState extends State<EditProfil> {
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor:
-                        const Color(0xFFFF8A00), // Code couleur orange
+                    backgroundColor: d_colorGreen, // Code couleur orange
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),

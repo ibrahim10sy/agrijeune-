@@ -13,6 +13,7 @@ class LoadingOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
     return Stack(
       children: [
         child,
@@ -23,7 +24,7 @@ class LoadingOverlay extends StatelessWidget {
                 child: Center(
                   child: CircularProgressIndicator(
                     backgroundColor: (Color.fromARGB(255, 245, 212, 169)),
-                    color: (Colors.orange),
+                    color: d_colorGreen,
                   ),
                   // Indicateur de chargement
                 ),

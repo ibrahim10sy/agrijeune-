@@ -202,31 +202,27 @@ class _DefautAcceuilState extends State<DefautAcceuil> {
 
   List<Widget> _buildCards() {
     List<Widget> cards = [
-      _buildAccueilCard("Semences et plants", "semence.png", 13),
-      _buildAccueilCard("Produits phytosanitaires", "physo.png", 12),
-      _buildAccueilCard("Engrais et apports", "engrais.png", 11),
-      _buildAccueilCard("Fruits et légumes", "fruit&legume.png", 10),
-      _buildAccueilCard("Compléments alimentaires", "compl.png", 5),
-      _buildAccueilCard("Produits transformés", "transforme.png", 8),
-      _buildAccueilCard("Produits d'élevages", "elevage.png", 7),
-      _buildAccueilCard("Produits agricoles", "pro1.png", 9),
-      _buildAccueilCard("Matériels et équipements", "equi.png", 16),
-      _buildAccueilCard("Magasins", "shop1.png", 6),
-      _buildAccueilCard("Moyens de transport", "transp.png", 3),
-      _buildAccueilCard("Matériels de location", "loc.png", 4),
-      _buildAccueilCard("Météo", "met1.png", 2),
+      _buildAccueilCard("Semences et plants", "semence.png", 12),
+      _buildAccueilCard("Produits phytosanitaires", "physo.png", 11),
+      _buildAccueilCard("Engrais et apports", "engrais.png", 10),
+      _buildAccueilCard("Fruits et légumes", "fruit&legume.png", 9),
+      _buildAccueilCard("Compléments alimentaires", "compl.png", 4),
+      _buildAccueilCard("Produits transformés", "transforme.png", 7),
+      _buildAccueilCard("Produits d'élevages", "elevage.png", 6),
+      _buildAccueilCard("Produits agricoles", "pro1.png", 8),
+      _buildAccueilCard("Matériels et équipements", "equi.png", 14),
+      _buildAccueilCard("Magasins", "shop1.png", 5),
+      _buildAccueilCard("Moyens de transport", "transp.png", 2),
+      _buildAccueilCard("Matériels de location", "loc.png", 3),
       _buildAccueilCard("Conseils", "cons1.png", 1)
     ];
 
     if (isExist) {
       cards.insert(
         8,
-        _buildAccueilCard("Intrants agricoles", "int1.png", 15),
+        _buildAccueilCard("Intrants agricoles", "int1.png", 13),
       );
-      // cards.insert(
-      //   11,
-      //   _buildAccueilCard("Commandes", "cm.png", 14),
-      // );
+     
     }
 
     return cards;
@@ -237,60 +233,54 @@ class _DefautAcceuilState extends State<DefautAcceuil> {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
       child: InkWell(
         onTap: () {
-          if (index == 16) {
+          if (index == 14) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => MaterielAndEquipement()));
-          } else if (index == 15) {
+          } else if (index == 13) {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => IntrantPage()));
           }
-          // else if (index == 14) {
-          //   Navigator.push(context,
-          //       MaterialPageRoute(builder: (context) => const MesCommande()));
-          // }
-          else if (index == 13) {
+          
+          else if (index == 12) {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => SemenceAndPlant()));
-          } else if (index == 12) {
+          } else if (index == 11) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => ProduitPhytosanitaire()));
-          } else if (index == 11) {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => EngraisAndApport()));
           } else if (index == 10) {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => FruitAndLegumes()));
+                MaterialPageRoute(builder: (context) => EngraisAndApport()));
           } else if (index == 9) {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => ProductsScreen()));
+                MaterialPageRoute(builder: (context) => FruitAndLegumes()));
           } else if (index == 8) {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => ProduitTransforme()));
+                MaterialPageRoute(builder: (context) => ProductsScreen()));
           } else if (index == 7) {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => ProduitElevage()));
+                MaterialPageRoute(builder: (context) => ProduitTransforme()));
           } else if (index == 6) {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => StoreScreen()));
+                MaterialPageRoute(builder: (context) => ProduitElevage()));
           } else if (index == 5) {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => StoreScreen()));
+          } else if (index == 4) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => ComplementAlimentaire()));
-          } else if (index == 4) {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => l.Location()));
           } else if (index == 3) {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Transport()));
+                context, MaterialPageRoute(builder: (context) => l.Location()));
           } else if (index == 2) {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => WeatherScreen()));
-          } else if (index == 1) {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Transport()));
+          }  else if (index == 1) {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const ConseilScreen()));
           }

@@ -719,10 +719,10 @@ class _AddAndUpdateProductEndSreenState
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 20, vertical: 10),
                             backgroundColor:
-                                d_colorGreen, // Style de fond personnalisé
+                                d_colorGreen,
                             shape: RoundedRectangleBorder(
                               borderRadius:
-                                  BorderRadius.circular(8), // Bords arrondis
+                                  BorderRadius.circular(8),
                             ),
                           ),
                           child: const Text(
@@ -1160,7 +1160,7 @@ class _AddAndUpdateProductEndSreenState
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor:
-                                  const Color(0xFFFF8A00), // Orange color code
+                                  d_colorGreen, // Orange color code
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),

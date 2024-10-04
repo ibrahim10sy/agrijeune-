@@ -41,7 +41,7 @@ class RegisterNextScreen extends StatefulWidget {
   State<RegisterNextScreen> createState() => _RegisterNextScreenState();
 }
 
-
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 
 class _RegisterNextScreenState extends State<RegisterNextScreen> {
   PhoneCountryData? _initialCountryData;
@@ -542,7 +542,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
               },
               child: const Text(
                 'Fermer',
-                style: TextStyle(color: Colors.orange, fontSize: 17),
+                style: TextStyle(color: d_colorGreen, fontSize: 17),
               ),
             )
           ]),
@@ -755,7 +755,7 @@ class _RegisterNextScreenState extends State<RegisterNextScreen> {
                             ),
                             style: ElevatedButton.styleFrom(
                               backgroundColor:
-                                  const Color(0xFFFF8A00), // Orange color code
+                                  d_colorGreen, // Orange color code
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
                               ),

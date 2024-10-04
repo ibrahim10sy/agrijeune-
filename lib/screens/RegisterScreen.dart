@@ -33,9 +33,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
   String? typeValue;
   String? selectedCountry = "";
   String? detectedCountryCode = "";
-  // late TypeActeur monTypeActeur;
-  // late Future _mesTypeActeur;
-  Position? _currentPosition;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   String _errorMessage = "";
@@ -365,7 +362,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             child: Column(
               children: [
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Center(
                     child: SizedBox(
@@ -397,10 +394,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (context) => const LoginScreen()));
                             Future.microtask(() {
                               Provider.of<BottomNavigationService>(context,
                                       listen: false)

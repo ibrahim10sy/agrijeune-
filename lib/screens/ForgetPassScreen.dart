@@ -17,7 +17,7 @@ class ForgetPassScreen extends StatefulWidget {
   @override
   State<ForgetPassScreen> createState() => _ForgetPassScreenState();
 }
-
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 class _ForgetPassScreenState extends State<ForgetPassScreen>
     with AutomaticKeepAliveClientMixin<ForgetPassScreen> {
   // Override wantKeepAlive to return true
@@ -414,7 +414,7 @@ class _ForgetPassScreenState extends State<ForgetPassScreen>
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor:
-                        const Color(0xFFFF8A00), // Orange color code
+                        d_colorGreen, // Orange color code
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),

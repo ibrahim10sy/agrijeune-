@@ -42,7 +42,7 @@ class RegisterEndScreen extends StatefulWidget {
   State<RegisterEndScreen> createState() => _RegisterEndScreenState();
 }
 
-
+const d_colorGreen = Color.fromRGBO(43, 103, 6, 1);
 
 class _RegisterEndScreenState extends State<RegisterEndScreen> {
   bool isLoading = false;
@@ -495,10 +495,10 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
         backgroundColor: const Color.fromARGB(255, 250, 250, 250),
         appBar: AppBar(
             leading: IconButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              icon: const Icon(Icons.arrow_back_ios)),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: const Icon(Icons.arrow_back_ios)),
             actions: [
               TextButton(
                 onPressed: () {
@@ -509,7 +509,7 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
                 },
                 child: const Text(
                   'Fermer',
-                  style: TextStyle(color: Colors.orange, fontSize: 17),
+                  style: TextStyle(color: d_colorGreen, fontSize: 17),
                 ),
               )
             ]),
@@ -698,39 +698,39 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
                                               .toString()
                                               .trim() ==
                                           "123456") {
-                                            ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
-                                      content: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Expanded(
-                                            child: Text(
-                                             'Mot de passe faible, veuillez saisir un mot de passe sécurisé.',
-                                              maxLines: 2,
-                                              style: TextStyle(
-                                                fontSize: 16,
-                                                color: Colors.white,
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Expanded(
+                                              child: Text(
+                                                'Mot de passe faible, veuillez saisir un mot de passe sécurisé.',
+                                                maxLines: 2,
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                  color: Colors.white,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Icon(Icons.error_outline,
-                                              color: Colors.white),
-                                        ],
+                                            Icon(Icons.error_outline,
+                                                color: Colors.white),
+                                          ],
+                                        ),
+                                        backgroundColor: Colors
+                                            .redAccent, // Couleur de fond du SnackBar
+                                        duration: Duration(seconds: 3),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        behavior: SnackBarBehavior
+                                            .floating, // Flottant pour un style moderne
+                                        margin: EdgeInsets.all(
+                                            10), // Espace autour du SnackBar
                                       ),
-                                      backgroundColor: Colors
-                                          .redAccent, // Couleur de fond du SnackBar
-                                      duration: Duration(seconds: 3),
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      behavior: SnackBarBehavior
-                                          .floating, // Flottant pour un style moderne
-                                      margin: EdgeInsets.all(
-                                          10), // Espace autour du SnackBar
-                                    ),
-                                  );
-                                   
+                                    );
                                   } else {
                                     _handleButtonPress(context);
                                   }
@@ -746,8 +746,8 @@ class _RegisterEndScreenState extends State<RegisterEndScreen> {
                                 ),
                               ),
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(
-                                    0xFFFF8A00), // Orange color code
+                                backgroundColor:
+                                    d_colorGreen, // Orange color code
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(15),
                                 ),

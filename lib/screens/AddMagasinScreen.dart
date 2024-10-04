@@ -21,24 +21,12 @@ class AddMagasinScreen extends StatefulWidget {
   bool? isRoute;
   bool? isEditable;
   final Magasin? magasin;
-  // String? nomMagasin = "";
-  // String? contactMagasin = "";
-  // String? localiteMagasin = "";
-  // String? idMagasin = "";
-  // File? photo;
-  // late Niveau1Pays? niveau1Pays;
-
+ 
   AddMagasinScreen(
       {super.key,
       this.isRoute,
       this.isEditable,
       this.magasin,
-      // this.idMagasin,
-      // this.nomMagasin,
-      // this.contactMagasin,
-      // this.localiteMagasin,
-      // this.photo,
-      // this.niveau1Pays
       });
 
   @override
@@ -802,7 +790,7 @@ class _AddMagasinScreenState extends State<AddMagasinScreen> {
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor:
-                                const Color(0xFFFF8A00), // Orange color code
+                                d_colorGreen, // Orange color code
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15),
                             ),
